@@ -1,5 +1,6 @@
 :root {
-  --main-font: 'Work Sans', 'Comfortaa', sans-serif;
+  --font-family: 'Work Sans', sans-serif;
+  --second-family: 'Comfortaa', sans-serif;
   --main-color: #080c0c;
   --bg-color: #f5fdfd;
 
@@ -8,7 +9,31 @@
 
 body {
   margin: 0;
-  font-family: var(--main-font);
+  font-family: var(--font-family);
   color: var(--main-color);
   background-color: var(--bg-color);
+}
+
+.menu-toggle-btn {
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 48px;
+  min-height: 48px;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  border: 1px solid #F19898;
+  background-color: #F19898;
+  border-radius: 100px;
 }

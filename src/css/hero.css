@@ -1,0 +1,104 @@
+.hero {
+    background-color: #251C15;
+    padding: 155.5px 0;
+    margin: 0 auto;
+    max-width: 1440px;
+    background-image: url(/img/hero/hero-mob.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @media screen and (min-resolution: 2dppx), (-webkit-min-device-pixel-ratio: 2) {
+        background-image: url(/img/hero/hero-mob-2x.jpg);
+    }
+}
+
+.hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 335px;
+}
+
+.hero-title {
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: #fff;
+    margin-bottom: 24px;
+}
+
+.hero-text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #fff;
+    margin-bottom: 32px;
+}
+
+.hero-btn {
+    padding: 9px 24px;
+    white-space: nowrap;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: #fff;
+    border-color: #080C0C;
+
+}
+
+.hero-btn:active {
+    background-color: #F5B6B6;
+
+    transition: 0ms;
+}
+
+@media screen and (min-width: 768px) {
+    .hero {
+        padding: 325px 0;
+        background-image: url(/img/hero/hero-tab.jpg);
+
+        @media screen and (min-resolution: 2dppx), (-webkit-min-device-pixel-ratio: 2) {
+            background-image: url(/img/hero/hero-tab-2x.jpg);
+        }
+    }
+
+    .hero-content {
+        max-width: 704px;
+    }
+
+    .hero-btn {
+        width: 219px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .hero {
+        padding: 306px 0;
+        background-image: url(/img/hero/hero.jpg);
+        
+        @media screen and (min-resolution: 2dppx), (-webkit-min-device-pixel-ratio: 2) {
+            background-image: url(/img/hero/hero-2x.jpg);
+        }
+    }
+
+    .hero-content {
+        max-width: 768px;
+    }
+
+    .hero-title {
+        font-size: 56px;
+    }
+}
